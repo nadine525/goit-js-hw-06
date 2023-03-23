@@ -9,7 +9,9 @@ validationInput.addEventListener("blur", (event) => {
 
   if (lengthInFact === baseLength) {
     validationInput.classList.add("valid");
+    validationInput.classList.remove("invalid");
   } else {
     validationInput.classList.add("invalid");
+    validationInput.classList.remove("valid");
   }
 });
